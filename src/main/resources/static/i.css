@@ -1,0 +1,267 @@
+
+    /* Basic reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Navigation bar styles */
+    .navbar {
+        background-color:#3498db;
+        color: #fff;
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: serif;
+
+    }
+
+    .navbar-logo {
+        margin-right: auto; /* Pushes the logo to the left as much as possible */
+    }
+
+    .navbar-nav {
+        display: flex;
+        list-style: none;
+    }
+
+    .nav-item {
+        margin-left: 15px;
+        font-size: large;
+    }
+    .nav-link:hover{
+        color: #555;
+    }
+
+    .nav-link {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    /* Body styles */
+    body {
+        font-family: Arial, sans-serif;
+        padding: 0px;
+        background-color:lightblue ;
+    }
+
+    .big-photo {
+        background-image: url('images/slider4.jpg');
+        background-size:cover;
+        background-position:cover;
+        height: 500px; /* Adjust height as needed */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    .button-container {
+        text-align: right;
+        margin-top: 20px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    .button:hover {
+        background-color: #555;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        text-align: center ;
+    }
+
+
+    /* Course styles */
+    .course {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .course-image {
+        flex: 0 0 200px; /* Fixed width for the image */
+        margin-right: 20px;
+
+    }
+
+    .course-image img {
+        width: 100%;
+        height: auto;
+        background-color:lightblue ;
+    }
+
+
+    .course-details {
+        flex: 1;
+        padding: 30px;
+    }
+
+    .course-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .course-description {
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    /* Review styles */
+    .review {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .review-author {
+        font-style: italic;
+        margin-bottom: 5px;
+    }
+
+    .review-text {
+        color: #555;
+    }
+
+    /* Footer styles */
+    footer {
+        background-color: #007bff;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+
+        bottom: 0;
+        width: 100%;
+    }
+
+    .footer-links a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    /* Contact page styles */
+    .contact-section {
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .contact-photo {
+        /* background-image: url('images/slide.jpg');
+        background-size: cover;
+        background-position: center; */
+        /* height: 300px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    .form-group textarea {
+        height: 150px;
+    }
+
+    .submit-btn {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .submit-btn:hover {
+        background-color: #555;
+    }
+    /* sliding */
+    .slider{
+        overflow: hidden;
+        height: 600px;
+    }
+    .slide{
+        display: flex;
+        position: relative;
+        height: 600px;
+        width: 600%;
+        left: 0;
+        animation: 12s slide infinite;
+    }
+    .slide img{
+        width: 16.67%;
+        height: 100%;
+    }
+    @keyframes slide{
+        0%{
+            left: 0;
+        }
+        15%{
+            left: 0;
+        }
+        20%{
+            left: -100%;
+        }
+        35%{
+            left: -100%;
+        }
+        40%{
+            left: -200%;
+        }
+        55%{
+            left: -200%;
+        }
+        60%{
+            left: -300%;
+        }
+        75%{
+            left: -300%;
+        }
+        80%{
+            left: -400%;
+        }
+        95%{
+            left: -400%;
+        }
+        100%{
+            left: -500%;
+        }
+    }

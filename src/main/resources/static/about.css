@@ -1,0 +1,107 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color:#3498db;
+    color: #fff;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: serif;
+
+}
+
+.navbar-logo {
+    margin-right: auto;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-left: 15px;
+    font-size: large;
+}
+.nav-link:hover{
+    color:#555 ;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+    body {
+        /* margin: 0;
+        padding: 0;
+        box-sizing: border-box; */
+        background-color:lightblue ;
+    }
+
+    .big-photo {
+        background-image: url('images/about.jpg');
+        background-size:cover;
+        background-position:cover;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .educators-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .educator {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .educator-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+
+    .educator-info {
+        flex: 1;
+    }
+
+    .educator-name {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .educator-qualification,
+    .educator-experience {
+        margin-bottom: 10px;
+    }
+     footer {
+        background-color:#007bff;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+
+        bottom: 0;
+        width: 100%;
+    }
+
+    .footer-links a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;}
